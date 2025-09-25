@@ -2,65 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Cyberpunk Security Profile Design System - All colors MUST be HSL */
+/* Executive Professional Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    /* Core cyberpunk palette */
-    --background: 220 15% 5%;          /* Deep dark blue-black */
-    --foreground: 120 100% 85%;        /* Matrix green */
+    /* Executive color palette */
+    --background: 220 15% 9%;          /* Deep sophisticated navy */
+    --foreground: 0 0% 95%;            /* Clean white text */
 
-    --card: 220 20% 8%;                /* Dark card background */
-    --card-foreground: 180 100% 85%;   /* Cyan text */
+    --card: 220 20% 12%;               /* Elegant card background */
+    --card-foreground: 0 0% 92%;       /* Crisp card text */
 
-    --popover: 220 25% 10%;
-    --popover-foreground: 120 100% 90%;
+    --popover: 220 25% 15%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Primary - Matrix green */
-    --primary: 120 100% 50%;           /* Bright matrix green */
-    --primary-foreground: 220 15% 5%;  /* Dark text on green */
+    /* Primary - Executive gold */
+    --primary: 45 100% 65%;            /* Sophisticated gold accent */
+    --primary-foreground: 220 15% 9%;  /* Dark text on gold */
 
-    /* Secondary - Cyber cyan */
-    --secondary: 180 100% 40%;         /* Electric cyan */
-    --secondary-foreground: 220 15% 5%;
+    /* Secondary - Refined blue */
+    --secondary: 220 25% 25%;          /* Professional blue-gray */
+    --secondary-foreground: 0 0% 95%;
 
-    /* Muted - Darker tones */
-    --muted: 220 20% 12%;
-    --muted-foreground: 120 50% 65%;
+    /* Muted - Subtle tones */
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 10% 65%;
 
-    /* Accent - Neon purple */
-    --accent: 280 100% 60%;            /* Electric purple */
-    --accent-foreground: 220 15% 5%;
+    /* Accent - Strategic amber */
+    --accent: 35 85% 55%;              /* Warm amber accent */
+    --accent-foreground: 220 15% 9%;
 
-    /* Destructive - Red warning */
-    --destructive: 0 100% 55%;
-    --destructive-foreground: 220 15% 5%;
+    /* Destructive - Professional red */
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 95%;
 
     /* Borders and inputs */
-    --border: 120 100% 25%;            /* Dark green borders */
-    --input: 220 25% 15%;
-    --ring: 120 100% 50%;
+    --border: 220 20% 25%;             /* Subtle borders */
+    --input: 220 25% 20%;
+    --ring: 45 100% 65%;
 
     /* Design tokens */
-    --radius: 0.75rem;
+    --radius: 0.5rem;
     
-    /* Custom cyberpunk gradients */
-    --gradient-matrix: linear-gradient(135deg, hsl(120 100% 50% / 0.1), hsl(180 100% 50% / 0.1));
-    --gradient-cyber: linear-gradient(45deg, hsl(280 100% 60% / 0.2), hsl(180 100% 50% / 0.2));
-    --gradient-glow: radial-gradient(circle, hsl(120 100% 50% / 0.3), transparent 70%);
+    /* Executive gradients */
+    --gradient-executive: linear-gradient(135deg, hsl(220 15% 9%) 0%, hsl(220 20% 12%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 65% / 0.1), hsl(35 85% 55% / 0.1));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 20% 12% / 0.5), transparent);
     
-    /* Shadows and glows */
-    --shadow-neon: 0 0 30px hsl(120 100% 50% / 0.5);
-    --shadow-cyber: 0 0 40px hsl(180 100% 50% / 0.3);
-    --shadow-purple: 0 0 25px hsl(280 100% 60% / 0.4);
+    /* Professional shadows */
+    --shadow-executive: 0 4px 20px hsl(220 15% 5% / 0.3);
+    --shadow-gold: 0 0 30px hsl(45 100% 65% / 0.2);
+    --shadow-card: 0 8px 32px hsl(220 15% 5% / 0.4);
     
     /* Typography */
-    --font-mono: 'Courier New', monospace;
-    --font-cyber: 'Inter', sans-serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Consolas', monospace;
     
-    /* Animations */
-    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-glow: all 0.5s ease-in-out;
+    /* Professional animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    --transition-elegant: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -79,51 +79,63 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  /* Enhanced dark mode for cyberpunk theme */
-  .dark {
-    --background: 220 20% 3%;          /* Even darker background */
-    --foreground: 120 100% 90%;        /* Brighter matrix green */
-    --card: 220 25% 6%;
-    --card-foreground: 180 100% 90%;
-    --border: 120 100% 30%;
-    --primary: 120 100% 60%;
-    --secondary: 180 100% 50%;
-    --accent: 280 100% 70%;
+  /* Light mode for professional contexts */
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 220 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+    --border: 220 20% 88%;
+    --primary: 45 80% 45%;
+    --secondary: 220 25% 85%;
+    --accent: 35 75% 45%;
   }
 }
 
-/* Cyberpunk utility classes */
+/* Executive utility classes */
 @layer components {
-  .cyber-glow {
-    box-shadow: var(--shadow-neon);
-    transition: var(--transition-glow);
+  .executive-card {
+    background: var(--gradient-executive);
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-elegant);
   }
   
-  .cyber-glow:hover {
-    box-shadow: 0 0 50px hsl(120 100% 50% / 0.8);
-    transform: translateY(-2px);
+  .executive-card:hover {
+    box-shadow: var(--shadow-card), var(--shadow-gold);
+    transform: translateY(-4px);
+    border-color: hsl(var(--primary) / 0.3);
   }
   
-  .matrix-text {
-    font-family: var(--font-mono);
+  .gold-accent {
     color: hsl(var(--primary));
-    text-shadow: 0 0 10px hsl(120 100% 50% / 0.5);
+    font-weight: 600;
   }
   
-  .glitch-text {
+  .executive-title {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+  }
+  
+  .professional-border {
+    border: 1px solid hsl(var(--border));
+    background: var(--gradient-subtle);
+  }
+  
+  .status-indicator {
     position: relative;
-    animation: glitch 2s infinite;
   }
   
-  .cyber-border {
-    border: 1px solid hsl(var(--primary));
-    background: var(--gradient-matrix);
-  }
-  
-  .terminal-cursor::after {
-    content: '▋';
-    animation: blink 1s infinite;
-    color: hsl(var(--primary));
+  .status-indicator::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent)));
+    animation: pulse-glow 2s ease-in-out infinite;
+    z-index: -1;
   }
 }
 
@@ -134,36 +146,46 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-cyber);
+    font-family: var(--font-sans);
     overflow-x: hidden;
+    line-height: 1.6;
   }
   
   html {
     scroll-behavior: smooth;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+  }
 }
 
-/* Cyberpunk animations */
-@keyframes glitch {
-  0%, 100% { transform: translateX(0); }
-  10% { transform: translateX(-2px) skewX(-5deg); }
-  20% { transform: translateX(2px) skewX(5deg); }
-  30% { transform: translateX(-1px) skewX(-2deg); }
-  40% { transform: translateX(1px) skewX(2deg); }
-  50% { transform: translateX(0); }
+/* Executive animations */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
 }
 
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
-}
-
-@keyframes matrix-rain {
-  0% { transform: translateY(-100vh); }
-  100% { transform: translateY(100vh); }
-}
-
-@keyframes float {
+@keyframes subtle-float {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes professional-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
 }
