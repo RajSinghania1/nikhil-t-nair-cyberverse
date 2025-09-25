@@ -3,6 +3,8 @@ import ExecutiveHero from '@/components/profile/ExecutiveHero';
 import ExecutiveExperience from '@/components/profile/ExecutiveExperience';
 import ExecutiveSkills from '@/components/profile/ExecutiveSkills';
 import ExecutiveProjects from '@/components/profile/ExecutiveProjects';
+import ExecutiveTestimonials from '@/components/profile/ExecutiveTestimonials';
+import ExecutiveSpeaking from '@/components/profile/ExecutiveSpeaking';
 
 const Index = () => {
   return (
@@ -16,6 +18,8 @@ const Index = () => {
         <ExecutiveExperience />
         <ExecutiveSkills />
         <ExecutiveProjects />
+        <ExecutiveTestimonials />
+        <ExecutiveSpeaking />
       </main>
       
       {/* Professional footer */}
