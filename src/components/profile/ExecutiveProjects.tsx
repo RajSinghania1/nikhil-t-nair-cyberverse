@@ -16,8 +16,8 @@ const executiveProjects = [
     executiveHighlights: [
       "Reduced security incident response time by 85%",
       "Achieved 97% accuracy in threat classification",
-      "Secured $5M Series A funding based on platform innovation",
-      "Featured as Google's breakthrough security innovation"
+      "Implemented across multiple enterprise environments",
+      "Recognized by industry peers for technical excellence"
     ],
     links: {
       demo: "#",
