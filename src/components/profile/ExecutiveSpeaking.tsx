@@ -58,17 +58,6 @@ const speakingEngagements = [
     topics: ["AI Security", "Machine Learning Threats", "Future of Cybersecurity"],
     description: "Keynote addressing the intersection of artificial intelligence and cybersecurity, including future threat landscapes.",
     category: "Innovation"
-  },
-  {
-    title: "Security Leadership in Digital Transformation",
-    event: "Broadcom Executive Summit",
-    year: "2023",
-    location: "Singapore",
-    type: "Panel Discussion",
-    audience: "100+ C-Suite Executives",
-    topics: ["Digital Transformation", "Security Leadership", "Business Continuity"],
-    description: "Panel discussion on leading security initiatives during organizational digital transformation.",
-    category: "Executive"
   }
 ];
 
