@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Mail, Github, Linkedin } from 'lucide-react';
 import cyberHeroBg from '@/assets/cyber-hero-bg.jpg';
+import nikhilProfile from '@/assets/nikhil-profile.png';
 
 const typingTexts = [
   "Security Engineer",
@@ -50,8 +51,20 @@ export default function HeroSection() {
       
       {/* Main content */}
       <div className="max-w-4xl mx-auto text-center z-10 relative">
+        {/* Professional Photo */}
+        <div className="mb-8 flex justify-center">
+          <div className="relative">
+            <img
+              src={nikhilProfile}
+              alt="Nikhil T Nair - Professional Portrait"
+              className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-primary/50 shadow-2xl cyber-glow"
+            />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-transparent"></div>
+          </div>
+        </div>
+        
         {/* Name with glitch effect */}
-        <h1 className="text-6xl md:text-8xl font-bold mb-6 glitch-text">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 glitch-text">
           <span className="matrix-text">Nikhil T Nair</span>
         </h1>
         
