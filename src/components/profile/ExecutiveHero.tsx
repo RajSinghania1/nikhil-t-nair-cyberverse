@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Mail, Linkedin, Award, Building2 } from 'lucide-react';
+import profilePhoto from '@/assets/nikhil-professional.png';
 
 const executiveRoles = [
   "Chief Technology Officer",
@@ -42,6 +43,17 @@ export default function ExecutiveHero() {
     <section className="min-h-screen flex items-center justify-center relative px-6 pt-20">
       {/* Main content */}
       <div className="max-w-5xl mx-auto text-center relative z-10">
+        {/* Professional Photo */}
+        <div className="mb-8 flex justify-center">
+          <div className="relative">
+            <img
+              src={profilePhoto}
+              alt="Nikhil T Nair - Professional Portrait"
+              className="w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover border-4 border-primary/40 shadow-lg"
+            />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/10 to-transparent"></div>
+          </div>
+        </div>
         {/* Name */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl executive-title mb-8 animate-fade-in-up">
           <span className="text-foreground">Nikhil T</span>{' '}
