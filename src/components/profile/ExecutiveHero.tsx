@@ -44,14 +44,27 @@ export default function ExecutiveHero() {
       {/* Main content */}
       <div className="max-w-5xl mx-auto text-center relative z-10">
         {/* Professional Photo */}
-        <div className="mb-8 flex justify-center">
-          <div className="relative">
-            <img
-              src={profilePhoto}
-              alt="Nikhil T Nair - Professional Portrait"
-              className="w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover border-4 border-primary/40 shadow-lg"
-            />
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/10 to-transparent"></div>
+        <div className="mb-12 flex justify-center">
+          <div className="relative group">
+            {/* Outer glow ring */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition-all duration-700 animate-pulse-glow"></div>
+            
+            {/* Main photo container */}
+            <div className="relative bg-gradient-to-br from-background via-card to-background p-1 rounded-full shadow-2xl">
+              <img
+                src={profilePhoto}
+                alt="Nikhil T Nair - Professional Portrait"
+                className="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full object-cover shadow-inner"
+              />
+              
+              {/* Professional overlay gradient */}
+              <div className="absolute inset-1 rounded-full bg-gradient-to-br from-transparent via-transparent to-primary/5 pointer-events-none"></div>
+              
+              {/* Status indicator */}
+              <div className="absolute bottom-4 right-4 w-6 h-6 bg-primary rounded-full border-4 border-background shadow-lg">
+                <div className="w-full h-full bg-primary rounded-full animate-pulse"></div>
+              </div>
+            </div>
           </div>
         </div>
         {/* Name */}
